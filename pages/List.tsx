@@ -34,7 +34,7 @@ export default function List() {
   } 
 
   const removeOrderFromView = (id:string) => {
-    setOrders(orders.filter(order => order._id !== id));
+    setOrders(orders.filter((order:{_id: string}) => order._id !== id));
   }
 
   // Deletes order from Mongodb and view
