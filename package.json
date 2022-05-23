@@ -41,7 +41,8 @@
     "react-spring": "^9.4.3",
     "react-uuid": "^1.0.2",
     "redux-persist": "^6.0.0",
-    "stylis-plugin-rtl": "^2.1.1"
+    "stylis-plugin-rtl": "^2.1.1",
+    "@types/react": "^18.0.9"
   },
   "devDependencies": {
     "@types/node": "17.0.7",
