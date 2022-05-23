@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "install": "npm install --save-dev @types/react",
     "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions",
     "lint": "eslint . --ext .ts,.tsx --color",
     "format": "prettier --write \"**/*.{js,ts,tsx,json}\"",
@@ -48,7 +47,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.7",
-    "@types/react": "^18.0.9",
+    "@types/react": "^18.0.1",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "babel-eslint": "^10.1.0",
