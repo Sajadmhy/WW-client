@@ -51,7 +51,7 @@ export default function List() {
   }
   
   useEffect(() => {
-    const fetchOrders = async (): Promise<any> => {
+    const fetchOrders = async (): Promise => {
       const response = await fetch(`https://ancient-ravine-06505.herokuapp.com/orders/orders`);
       const json = await response.json();
       setOrders(json)
