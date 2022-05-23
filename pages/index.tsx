@@ -112,7 +112,7 @@ export default function Home() {
 
   //Updates the finalized ammount of order
   useEffect(() => {
-   setSum(count * parseInt(inputValues.price));
+   setSum(count * (inputValues.price));
   },[count,inputValues.price]);
 
   function handleSubmit(e) {
