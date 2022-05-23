@@ -16,7 +16,7 @@ import i18nConfig from '../i18n'
 import { EmotionCache } from '@emotion/react'
 
 type NextPageWithLayout = NextPage & {
-  getLayout?: (page: ReactElement) => ReactNode
+  getLayout?: (page: ReactNode) => ReactNode
 }
 
 type AppPropsWithLayout = AppProps & {
@@ -27,7 +27,7 @@ type AppPropsWithLayout = AppProps & {
 const App = (props: AppPropsWithLayout) => {
   const { Component, serverEmotionCache, pageProps } = props
   const { locale } = useRouter()
-  const getLayout = Component.getLayout ?? ((page) => page)
+  const getLayout = Component.getLayout ?? ((page: ReactNode) => page)
 
   return (
     <WithRedux>
