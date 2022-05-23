@@ -1,0 +1,93 @@
+.header {
+    padding: 0 10px 0 30px;
+    width: 150px;
+    height: 40px;
+    background-color: lightgrey;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.delete {
+    color: red;
+    display: inline-block;
+    margin: 35px 10px 0 0;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: black;
+}
+
+.delete:active {
+    color: gray;
+}
+
+.button {
+    color: blue;
+    border-style: solid;
+    border-color: blue;
+    width: 80px;
+    height: 30px;
+    border-width: 1px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.button:active {
+    color:black;
+    background-color: gray;
+}
+
+.data {
+    padding: 10px 0;
+    border-bottom: solid 1px lightgray;
+}
+
+.deets {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.box {
+    background-color: dodgerblue;
+    width: 400px;
+    display: block;
+    height: 200px;
+    text-align: right;
+    margin: auto;
+    padding: 0 10px 10px 10px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.closeWatch {
+    border-style: none;
+    border-radius: 5px;
+}
+
+.closeWatch:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.closeWatch:active {
+    background-color: gray;
+    color: white;
+}

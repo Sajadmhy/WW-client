@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.woff') format('woff'),
+        url('../fonts/Yekan.woff2') format('woff2');
+}
+.container {
+    font-family: 'Yekan';
+}
+
+#box {
+    display: block;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 10px;
+    background-color: white;
+}
+
+.h3 {
+    color: white;
+    width: 300px;
+    margin: 30px auto;
+    text-align: right;
+    display: inline-block;
+}
+
+.watch {
+    border-style: none;
+    background-color: dodgerblue;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Yekan';
+
+}
+
+.submit {
+    border-style: none;
+    background-color: blue;
+    color: white;
+    width: 130px;
+    height: 40px;
+    margin: 10px 20px;
+    cursor: pointer;
+    font-family: 'Yekan';
+    font-size: 17px;
+}
+
+.cancel {
+    border-style: none;
+    color: blue;
+    background-color: white;
+    width: 130px;
+    height: 40px;
+    margin: 10px 20px;
+    cursor: pointer;
+    font-family: 'Yekan';
+    font-size: 17px;
+}
+
+
+.close { 
+    color: white;
+    font-size: 30px;
+    display: inline;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.item {
+    display: inline-block;
+    margin: 10px 0 10px 40px;
+}

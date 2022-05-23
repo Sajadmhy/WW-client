@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.woff') format('woff'),
+        url('../fonts/Yekan.woff2') format('woff2');
+}
+
+.container {
+    font-family: 'Yekan';
+    background-color: rgb(221, 221, 221);
+    width: 300px;
+    margin: 0 10px;
+}
+
+.h3 {
+    color: green;
+    margin: 10px 20px;
+}
+
+.column {
+    width: 100px;
+}
+
+.price {
+    color: green;
+}
+
+.more {
+    width: 100%;
+    height: 40px;
+    border-style: none;
+    font-family: 'Yekan';
+}
+
+.more:hover {
+    background-color: gray;
+    cursor: pointer;
+}

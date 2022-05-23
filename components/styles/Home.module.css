@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.woff') format('woff'),
+        url('../fonts/Yekan.woff2') format('woff2');
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+    font-family: 'Yekan';
+}
+
+.nav , .form , .offer {
+    flex: auto;
+}
+
+.img , .nav {
+    flex-shrink: 0;
+}
+
+.order {
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
