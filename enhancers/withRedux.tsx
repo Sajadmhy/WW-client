@@ -10,9 +10,9 @@ type Props = {
   children: React.ReactElement
 }
 
-const PersistWrapper = ({children}: Props) => (
+const PersistWrapper = (c: Props) => (
   <PersistGate loading={null} persistor={persistor}>
-    {children}
+    {c}
   </PersistGate>
 )
 

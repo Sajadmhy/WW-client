@@ -27,7 +27,7 @@ type AppPropsWithLayout = AppProps & {
 const App = (props: AppPropsWithLayout) => {
   const { Component, serverEmotionCache, pageProps } = props
   const { locale } = useRouter()
-  const getLayout = Component.getLayout ?? ((page: ReactNode) => page)
+  const getLayout = Component.getLayout ?? ((page) => page)
 
   return (
     <WithRedux>
