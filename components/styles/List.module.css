@@ -20,7 +20,9 @@
 }
 
 .orders {
-    margin:10px 50px;
+    margin:10px 20px;
+    width: 100vw;
+    overflow: auto;
 }
 
 .orderTable {
@@ -28,6 +30,7 @@
 }
 
 .pagi {
-    /* text-align: center; */
-    padding: 20px 300px 0 0;
+    text-align: center;
+    width: 300px;
+    margin: 50px 200px;
 }

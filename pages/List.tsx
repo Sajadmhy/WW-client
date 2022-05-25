@@ -88,6 +88,7 @@ export default function List() {
   const newDeets = [...deets];
   newDeets[index] = false;
   setDeets(newDeets);
+  return index;  
 }
  const totalPage = (orders.length)/3;
   return (
@@ -101,9 +102,9 @@ export default function List() {
         <h2 className={styles.h2}>لیست سفارش ها</h2>
         <div className={styles.orderTable}><Orders orders={orders} 
         deleteOrder={deleteOrder} showDeets={showDeets} 
-        hideDeets={hideDeets} deets={deets} page={page} /></div>
-        <div className={styles.pagi}><Pagination count={Math.ceil(totalPage)} page={page} 
-        onChange={handlePageChange}/></div>
+        hideDeets={hideDeets} deets={deets} page={page} handlePageChange={handlePageChange} /></div>
+        <div className={styles.pagi} ><Pagination count={Math.ceil(totalPage)} page={page} 
+        onChange={handlePageChange} variant="outlined" color="primary"/></div>
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import styles from './styles/Orders.module.css';
 import DeleteIcon from '@mui/icons-material/Delete';
+import Pagination from '@mui/material/Pagination';
+import { display } from '@mui/system';
 
 
 export default function Orders(props) {
@@ -9,6 +11,10 @@ export default function Orders(props) {
     .slice((parseInt(props.page)-1)*3,((parseInt(props.page)-1)*3)+3);
     
     const index = (props.page-1)*3;
+
+    const totalPage = (props.orders.length)/3;
+    const page = props.page;
+
 
     return(
         <>
@@ -40,6 +46,7 @@ export default function Orders(props) {
                 <DeleteIcon />
             </div>
             </tr>
+            
             <div style={{ display: props.deets[parseInt(key)+index]? 'block' : 'none' }} className={styles.deets}>
               <div className={styles.box}>
                 <button onClick={() => props.hideDeets(data._id)}
@@ -51,6 +58,8 @@ export default function Orders(props) {
             </>
             )}
         </table>
+        {/* <div className={styles.pagi} ><Pagination count={Math.ceil(totalPage)} page={page} 
+        onChange={props.handlePageChange} variant="outlined" color="primary"/></div> */}
         </>
     )
 }
