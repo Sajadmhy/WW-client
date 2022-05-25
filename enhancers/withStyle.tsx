@@ -23,7 +23,7 @@ import configTheme from '../theme/configure'
 /* WithTheme Component =================== */
 const WithTheme = ({ children, serverEmotionCache }) => {
   const { locale } = useRouter()
-  useThemeDetector()
+  // useThemeDetector()
   // const [isDark, setIsDark] = useState(useThemeDetector())
   const theme = useSelector((state) => state.app.theme)
 

@@ -17,7 +17,7 @@ const useThemeDetector = () => {
 
   useEffect(() => {
     if (!theme) {
-      const preferredTheme = isDark ? 'dark' : 'light'
+      const preferredTheme = isDark ? 'light' : 'light'
       dispatch(appSlice.actions.setTheme(preferredTheme))
     }
   }, [dispatch, isDark, theme])
