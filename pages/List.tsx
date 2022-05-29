@@ -4,7 +4,8 @@ import Orders from '../components/Orders';
 import styles from '../components/styles/List.module.css';
 import { useEffect, useState } from 'react';
 import Pagination from '@mui/material/Pagination';
-
+import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export default function List() {
   
@@ -13,6 +14,7 @@ export default function List() {
   const [deets,setDeets] = useState([false]);
   const [activeH,setActiveH] = useState(false);
   const [activeL,setActiveL] = useState(true);
+  const [isFetched, setIsFetched] = useState(false);
 
   const highlightH = () => {
       //resets styles of other items
@@ -38,7 +40,6 @@ export default function List() {
   }
 
   // Deletes order from Mongodb and view
-  
   const deleteOrder = async(id:string) => {
     await fetch(`https://ancient-ravine-06505.herokuapp.com/orders/delete?orderID=${id}`, {
       method: "delete",
@@ -58,6 +59,7 @@ export default function List() {
       setDeets(
         json.map(n => n.deets)
       )
+      setIsFetched(true)
     }
     fetchOrders();
   }, []);
@@ -88,7 +90,7 @@ export default function List() {
   const newDeets = [...deets];
   newDeets[index] = false;
   setDeets(newDeets);
-  return index;  
+  // return index;  
 }
  const totalPage = (orders.length)/3;
   return (
@@ -100,6 +102,11 @@ export default function List() {
       activeH={activeH} activeL={activeL}/></div>
       <div className={styles.orders}>
         <h2 className={styles.h2}>لیست سفارش ها</h2>
+        <div className={styles.loading} style={{ display: isFetched ? 'none' : 'block'}}>
+          <Box sx={{ display: 'flex' }}>
+            <CircularProgress />
+          </Box>
+        </div>
         <div className={styles.orderTable}><Orders orders={orders} 
         deleteOrder={deleteOrder} showDeets={showDeets} 
         hideDeets={hideDeets} deets={deets} page={page} handlePageChange={handlePageChange} /></div>

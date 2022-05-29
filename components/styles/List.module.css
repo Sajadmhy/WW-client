@@ -32,6 +32,17 @@
 .pagi {
     text-align: center;
     width: 300px;
-    margin: 50px 200px;
+    margin: 50px 40%;
     color: black;
+}
+
+.loading {
+    z-index: 100;
+    position: absolute;
+    background-color: rgba(204, 204, 204, 0.5);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding-right: 40%;
+    padding-top: 100px;       
 }
