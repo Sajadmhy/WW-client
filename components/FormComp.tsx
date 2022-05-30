@@ -26,8 +26,8 @@ export default function FormComp(props) {
             <button className={styles.incre} onClick={props.increment} type='button' id="add">+</button>
             <button className={styles.incre} onClick={props.decrement} type='button' id="sub">-</button>
             <input className={styles.input} name='price' id="price" min='0' type='number' onChange={props.handleChange} placeholder="قیمت هر واحد" required/>
-            <p>مبلغ خرید:</p>
-            <p>{props.sum} دلار</p>
+            <p style={{ display: 'inline-block' }}>مبلغ خرید:</p>
+            <p style={{ display: props.sum ? 'inline-block' : 'none', paddingRight: '20px' }}>{props.sum} دلار</p>
             <button type='submit' onClick={props.checkForm} className={styles.submit}>{props.buy? 'خرید' : 'فروش'}</button>
         </form>
         </div>

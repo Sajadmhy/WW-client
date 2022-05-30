@@ -42,7 +42,7 @@ export default function Home() {
 
   //Adds to the count state amount by 1
   function increment() {
-    if (count=== undefined ) {
+    if (isNaN(count)) {
       setCount (1);
       setInputValues ({
         ...inputValues, count: 1
@@ -140,11 +140,18 @@ export default function Home() {
 
   //Checks for empty inputs in the FormComp component
   function checkForm() {
+    var nameRegex = new RegExp("^[\u0600-\u06FF\uFB8A\u067E\u0686\u06AF\u200C\u200F]+$");
+    var phoneRegex = new RegExp ("^(\\+98|0)?9\\d{9}$");
     if (inputValues.name === '' ) {
       alert('نام را وارد کنید');
+    } else if (!nameRegex.test(inputValues.name)) {
+      alert('از الفبای فارسی برای نام استفاده کنید')
     } else if (inputValues.phone === 0) {
       alert('شماره تلفن را وارد کنید');
-    } else if (count === 0 || inputValues.price === 0) {
+    } else if (!phoneRegex.test((inputValues.phone).toString())) {
+      alert('این شماره تماس معتبر نیست')
+    } else if (count === 0 || count.toString() === '' 
+    || inputValues.price === 0 || inputValues.price.toString() === '') {
       alert('قیمت یا تعداد نباید صفر باشد');
     } else {
       toggleOrder();

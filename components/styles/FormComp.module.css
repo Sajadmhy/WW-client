@@ -40,6 +40,17 @@
     font-family: 'Yekan';
 }
 
+.input::-webkit-inner-spin-button , .input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.count::-webkit-inner-spin-button , .count::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .count {
     display: inline-block;
     border-style: solid;
@@ -69,3 +80,4 @@
     color: white;
     font-family: 'Yekan';
 }
+
