@@ -1,32 +1,38 @@
-## Wish Work NextJS Boilerplate
-> This boilerplate has been developed with the aim of developing faster, easier and maintainable web platforms.
 
-## Overview 
-The core libraries which has been used in the boilerplate has been scheme below.
-However, there are multiple micro-libraries from which software engineers could leverage. 
+## Minor Collaboration
 
-- MUI
-- NEXTJS
-- I18N
-- REDUX Toolkit
-- ESLINT
-- FRAMER MOTION
+This repo has been initialized for Sajad Mahyaei and Wish guys.
+More information will be added soon.
 
-## Structure
-We has been breaking down all the materials and provide a document in each folder, so in this section we just describe the main structure and folders
+## How to Run Locally
+### Server
 
-    .
-    ├── components       # mid-level components like form control
-    ├── enhancers        # Wrappers and hooks
-    ├── pages            # Routes and pages ( check out next js doc )
-    ├── public           # All images and locales
-    ├── redux            # Redux ecosystem, actions, reducers and store
-    ├── theme            # All the materials related to MUI except wrapers like ThemeProvider
-    ├── .env          
-    ├── .eslintrc.json             
-    ├── .gitignore      
-    ├── i18n.js           
-    ├── next-env.d.ts   
-    ├── next.config.js  
-    ├── package.json                 
-    └── tsconfig.json   
+cd into the server folder and execute this code inside the terminal:
+<code>npm run start</code>
+To see the result open your browser and go to <a>http://localhost:5000</a>
+
+### Client
+
+cd into the client folder and execute this code inside the terminal:
+<code>npm run dev</code>
+To see the result open your browser and go to <a>http://localhost:3000</a>
+
+## Live Version
+
+You can see the live version of this app <a href="https://stately-zabaione-b81df0.netlify.app/">here</a>.
+
+## The Abstraction
+
+We are going to provide two pages, first page consists of an order form box, sell info box, and monthly report. The second page consists of the submitted info in the first-page form beside it has pagination and modal which will show the orders details info (details should be cached).</br>
+<b>First Page</b>
+<img width="1600" alt="Home" src="https://user-images.githubusercontent.com/75728944/168822428-f6ca9e92-470c-4be6-aef9-33b1714fdfa4.png" ></br>
+</br>
+<b>Second Page + Modal</b>
+<img width="1600" alt="List" src="https://user-images.githubusercontent.com/75728944/168822989-767fe600-ca1d-4acc-b4e4-1b245588711b.png">
+<img width="497" alt="Modal" src="https://user-images.githubusercontent.com/75728944/168823006-f13d2c05-03fd-42fd-be6d-ecb6a8ad9d5a.png">
+
+
+## Contributors:
+
+<b>Sajad:</b> Software Engineer </br>
+<b>Nazanin:</b> Product Manager </br>
